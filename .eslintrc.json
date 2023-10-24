@@ -1,3 +1,28 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "prettier",
+    "next/core-web-vitals",
+    "plugin:jsx-a11y/recommended",
+    "eslint-config-prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": ["jsx-a11y", "@typescript-eslint"],
+  "rules": {
+    "jsx-a11y/aria-role": [
+      "error",
+      {
+        "allowedInvalidRoles": ["text"],
+        "ignoreNonDOM": true
+      }
+    ],
+    "react/no-unescaped-entities": "off",
+    "@next/next/no-page-custom-font": "off"
+  }
 }
