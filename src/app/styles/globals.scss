@@ -1,0 +1,20 @@
+@use 'variables';
+@import 'reset.css';
+
+:root {
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+
+  }
+}
+
+body {
+  color: variables.$font-color-primary;
+  background: variables.$bg-color-primary;
+  font-size: 10px;
+  padding:2rem;
+}
+

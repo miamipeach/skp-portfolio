@@ -1,8 +1,18 @@
-import './globals.scss';
+import './styles/globals.scss';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Noto_Sans_KR, Roboto } from 'next/font/google';
+import React from 'react';
 
-const inter = Inter({ subsets: ['latin'] });
+const notoSansKr = Noto_Sans_KR({
+  subsets: ['latin'],
+  weight: ['100', '400', '700', '900'],
+});
+
+const roboto = Roboto({
+  subsets: ['latin'],
+  weight: ['100', '400', '700'],
+  variable: '--roboto',
+});
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -12,7 +22,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${notoSansKr.className} ${roboto.className} scrollbar-hide`}>
+        {children}
+      </body>
     </html>
   );
 }

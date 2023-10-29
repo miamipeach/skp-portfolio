@@ -114,12 +114,6 @@ body {
     width: 100%;
 }
 
-body {
-    font-family: Pretendard, Pragmatica, Pragmatica-Extended, sans-serif, serif;
-    font-size: 14px;
-    font-weight: 400;
-    color: #232323;
-}
 
 /* HTML5 display-role reset for older browsers */
 article,
@@ -170,4 +164,3 @@ em {
 a {
     text-decoration: none;
 }
-

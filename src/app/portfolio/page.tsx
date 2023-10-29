@@ -1,3 +1,3 @@
-export default function portfolio(){
-    return <div>test</div>
+export default function portfolio() {
+  return <div>test</div>;
 }

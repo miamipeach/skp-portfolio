@@ -1,0 +1,31 @@
+@use './src/app/styles/variables';
+
+.introMe{
+
+  strong{
+    font-size: 2rem;
+    margin-bottom:0.3rem;
+    display: block;
+  }
+
+  ul{
+    margin-top: variables.$layout-area-space;
+    li{
+      padding:0.5rem 0;
+    }
+  }
+}
+
+.introText{
+  line-height: 1.5;
+  margin-top: variables.$layout-area-space;
+}
+
+.stack{
+  ul{
+    margin-top: variables.$layout-area-space;
+    li{
+      padding:0.5rem 0;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@use "variables";
+
+.commonSection{
+  font-size: 1.2rem;
+  max-width: variables.$layout-width;
+  width:100%;
+  margin: 0 auto;
+
+  header{
+    font-size: 1.5rem;
+    margin-bottom:1rem;
+  }
+  p{
+    line-height: 1.5;
+  }
+}
+
+.commonSection + .commonSection{
+  margin-top: variables.$layout-area-space * 3;
+}
+

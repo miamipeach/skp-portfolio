@@ -1,0 +1,47 @@
+@use './src/app/styles/variables';
+
+.job{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.job + .job{
+  margin-top: variables.$layout-area-space * 3;
+}
+
+.company{
+  flex-basis: 20rem;
+  flex-shrink: 0;
+  position:sticky;
+  top: 2rem;
+  left:0;
+
+  strong{
+    display: block;
+    margin-bottom:0.5rem;
+    font-size: 1.5rem
+  }
+}
+
+.experience{
+  dl + dl{
+    margin-top: variables.$layout-area-space * 2;
+  }
+
+  dt{
+    position: relative;
+    padding-left:0.8rem;
+    margin-bottom: variables.$layout-area-space / 2;
+
+    &:after{
+      content: '·';
+      position: absolute;
+      top:0;
+      left:0;
+    }
+  }
+
+  dd{
+    line-height: 1.5;
+  }
+}
